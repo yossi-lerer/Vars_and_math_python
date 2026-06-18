@@ -7,3 +7,7 @@ print(f"type of all varable: agent_name {type(agent_name)}, mission_code: {type(
 
 travel_distance = distance_to_target * 2 
 print(f"full distance for a trip from base to target and back: {travel_distance}")
+
+fuel_usage = 2 # liter/KM
+fuel_needed = fuel_usage * travel_distance
+print(f"fuel needed for the trip: {fuel_needed}")
