@@ -15,3 +15,9 @@ print(f"fuel needed for the trip: {fuel_needed}")
 total_fuel = 200
 remaining_fuel = total_fuel - fuel_needed
 print(f"remaining fuel: {remaining_fuel}")
+
+countdown_conversion = input("How long until your mission starts in seconds? ")
+countdown_conversion = int(countdown_conversion)
+countdown_in_minutes = countdown_conversion / 60
+countdown_in_hours = countdown_in_minutes / 60
+print(f"your mission start at {countdown_in_hours} hours. in minutes at {countdown_in_minutes}. at seconds {countdown_conversion}")
