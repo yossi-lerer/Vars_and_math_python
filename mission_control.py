@@ -28,3 +28,7 @@ print(f"your mission start at {countdown_in_hours} hours. in minutes at {countdo
 km_input = int(input("enter km to convert it to miles "))
 km_to_mile = km_input * 0.6214
 print(f"{km_input} km = {km_to_mile} miles")
+#step 10 
+new_agent_name = input("enter new name for agent ")
+agent_name = new_agent_name
+print(f"new agent name is {agent_name}")
