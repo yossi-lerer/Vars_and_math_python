@@ -48,3 +48,8 @@ check_bin_bool_equals = binary_bool_f == binary_bool_t
 print(f"Are the binary of false and true equal? {check_bin_bool_equals}")
 which_bool_is_larger = binary_bool_f > binary_bool_t
 print(f"Is True bigger? {which_bool_is_larger}.")
+# step 3
+int_number = bin(2)
+float_number = bin(2.0)
+check_bin_float_equals = int_number == float_number
+print(f"Are a regular number and a decimal number equal if they are the same number? {check_bin_float_equals}")
