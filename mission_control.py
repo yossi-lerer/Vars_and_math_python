@@ -41,3 +41,10 @@ check_bin_equals = binary_str == binary_number
 print(f"are they binary the same? {check_bin_equals}")
 which_is_larger = binary_str > binary_number
 print(f"the 5 in string is larger? {which_is_larger}.")
+# step 2
+binary_bool_f = int(False)
+binary_bool_t = int(True)
+check_bin_bool_equals = binary_bool_f == binary_bool_t
+print(f"Are the binary of false and true equal? {check_bin_bool_equals}")
+which_bool_is_larger = binary_bool_f > binary_bool_t
+print(f"Is True bigger? {which_bool_is_larger}.")
