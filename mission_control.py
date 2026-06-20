@@ -1,3 +1,5 @@
+import struct
+
 #step 2
 agent_name = "jj"
 mission_code = 118842
@@ -32,3 +34,26 @@ print(f"{km_input} km = {km_to_mile} miles")
 new_agent_name = input("enter new name for agent ")
 agent_name = new_agent_name
 print(f"new agent name is {agent_name}")
+
+#part 2 binary
+#step 1 
+binary_str = ''.join(format(ord(char), '08b') for char in "5")
+binary_number = bin(5)
+check_bin_equals = binary_str == binary_number
+print(f"are they binary the same? {check_bin_equals}")
+which_is_larger = binary_str > binary_number
+print(f"the 5 in string is larger? {which_is_larger}.")
+# step 2
+binary_bool_f = int(False)
+binary_bool_t = int(True)
+check_bin_bool_equals = binary_bool_f == binary_bool_t
+print(f"Are the binary of false and true equal? {check_bin_bool_equals}")
+which_bool_is_larger = binary_bool_f > binary_bool_t
+print(f"Is True bigger? {which_bool_is_larger}.")
+# step 3
+int_number = bin(2)
+float_number = struct.unpack('!I', struct.pack('!f', 2.0))[0]
+check_bin_float_equals = int_number == float_number
+print(f"Are a regular number and a decimal number equal if they are the same number? {check_bin_float_equals}")
+# step 4 
+# 7579686779686916073831601031141019711633
